@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Personal info page</title>
+
+
+	<style>
+form {
+	border: 1px solid black;
+	 border-collapse: collapse; 
+	 max-width:35%;
+}
+
+th, td {
+	padding: 4px;
+	text-align: left;
+	
+}
+
+</style>
+</head>
+<body>
+
+	<form action="/PracticeWebApp/PersonalInfoServlet" style="margin: 0; text-align: center;" method="post">
+	<h2>Personal info page</h2>
+		<table style="width: 25%">
+			<tr >
+				<th >Firstname:</th>
+				<td ><input type="text" id="fname" name="fname"></td>
+			</tr>
+			<tr>
+				<th>Lastname:</th>
+				<td><input type="text" id="lname" name="lname"></td>
+			</tr>
+			<tr>
+				<th>Middlename:</th>
+				<td><input type="text" id="mname" name="mname"></td>
+			</tr>
+			<tr>
+				<th>Gender :</th>
+				<td><input type="radio" name="gender" value="male">Male
+					<input type="radio" name="gender" value="female">Female</td>
+			</tr>
+			<tr  >
+			<th colspan="1">
+
+				<td><input type="submit" name="submit" value="submit"></td>
+				
+			</tr>
+		
+		
+	</table>
+</form>
+
+
+</body>
+</html>

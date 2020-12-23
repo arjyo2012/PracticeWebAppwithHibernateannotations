@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+   <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost/apexscema</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+		<property name="show_sql">true</property>
+
+    <!--Here we are mapping Pojo class not hbm-->
+<!--      <mapping class="com.as" /> --> 
+ <mapping class="com.as.vo.ContactInfo" /> 
+      <mapping class="com.as.vo.BankInfo" /> 
+ </session-factory>
+</hibernate-configuration>
+
+<!-- 
+		<property name="dialect">net.sf.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.driver_class">org.gjt.mm.mysql.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/apexscema</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">root</property>
+ -->		
+				<!-- Print SQL to stdout. -->
+	
+
+		

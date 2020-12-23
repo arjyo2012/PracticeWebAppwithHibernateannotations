@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bank info page</title>
+
+	<style>
+form {
+	border: 1px solid black;
+	 border-collapse: collapse; 
+	 max-width:35%;
+}
+
+th, td {
+	padding: 4px;
+	text-align: left;
+	
+}
+
+</style>
+</head>
+<body>
+
+	<form action="/PracticeWebApp/BankInfoServlet" style="margin: 0; text-align: center;" method="post">
+	<h2>Bank info page</h2>
+		<table style="width: 25%">
+			<tr >
+				<th >Bank Name:</th>
+				<td ><input type="text" id="bname" name="bname"></td>
+			</tr>
+			<tr>
+				<th>Account# :</th>
+				<td><input type="text" id="accountno" name="accountno"></td>
+			</tr>
+			<tr>
+				<th>SSN#:</th>
+				<td><input type="text" id="ssn" name="ssn"></td>
+			</tr>
+			
+			<tr  >
+			<th colspan="1">
+
+				<td align="center"><input type="submit" name="submit" value="submit"></td>
+				
+			</tr>
+		
+		</table>
+	
+</form>
+
+
+</body>
+</html>
